@@ -1,0 +1,227 @@
+/* -------  General Styles ------- */
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+h2 {
+  font-size: 26px;
+  font-weight: 400;
+  margin: 0 10px 10px 10px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+p {
+  line-height: 1.5em;
+  margin: 0;
+}
+
+section {
+  padding: 20px;
+}
+
+section.alternate-background {
+  background-color: #00a699;
+  color: #fff;
+}
+
+main section div img {
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+
+/* ---  Groups & Items --- */
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+.item-double {
+  flex: 2;
+}
+
+/* -------  Navigation ------- */
+
+header {
+  background-color: #ff385c;
+  padding: 20px 20px 0 20px;
+  text-align: center;
+}
+
+.logo {
+  font-family: "Pangolin", cursive;
+  font-size: 60px;
+  color: #fff;
+}
+
+nav{
+  text-align: center;
+}
+
+header nav ul li {
+  list-style-type: none;
+  display: inline;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0 20px 0 0;
+}
+
+header nav ul li a:hover {
+  color: #bdbdbd;
+  text-decoration: none;
+}
+
+
+/* -------  Search Form ------- */
+form {
+  border: 2px solid #ff385c;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+form article{
+  display: flex;
+  justify-content: space-around;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form div select,
+form div input {
+  margin-bottom: 20px;
+  width: 180px;
+}
+
+form button {
+  background-color: #ff385c;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  padding: 15px;
+  width: 100%;
+}
+
+
+
+/* -------  Footer ------- */
+
+footer {
+  background-color: #ff385c;
+}
+
+footer p {
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* -------  Media Query ------- */
+
+
+@media all and (min-width:480px){
+  header {
+    background-color: #ff385c;
+    padding: 20px 20px 0 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  form {
+    border: 2px solid #ff385c;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+  }
+  form div{
+    display: flex;
+    flex-direction: column;
+  }
+  form button{
+    width: 200px;
+    align-self: center;
+  }
+  #about{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  #about article{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  #about article div img {
+    width: 325px;
+    margin: 20px 10px 20px 5px;
+    flex-basis: 25%;
+  }
+  #about div{
+    display: flex;
+  }
+  #about div p{
+    align-self: center;
+    width:500px;
+    align-self: center;
+  }
+  #ideas{
+    display: flex;
+    flex-direction: column;
+  }
+  #ideas article{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  #ideas div img{
+    width:600px;
+    margin: 0px 0px 0px 0px;
+  }
+  #host{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+  #host div img {
+    width: 450px;
+    margin: 20px 10px 20px 5px;
+  }
+  #one{
+    flex-basis: 75%;
+    margin-right: 50px;
+    align-self: center;
+  }
+  #two{
+    flex-basis: 50%;
+  }
+  #host div p{
+    text-align: left;
+  }
+}
+
+

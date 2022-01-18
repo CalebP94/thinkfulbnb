@@ -94,6 +94,7 @@ form {
   padding: 10px;
   display: flex;
   flex-direction: column;
+
 }
 
 form article{
@@ -103,6 +104,12 @@ form article{
 
 form label {
   font-weight: bold;
+}
+
+form div{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 form div select,
@@ -196,6 +203,7 @@ footer p {
     display:flex;
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap:wrap;
   }
   #ideas div img{
     width:600px;
@@ -206,14 +214,15 @@ footer p {
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+    flex-wrap:wrap;
   }
   #host div img {
     width: 450px;
     margin: 20px 10px 20px 5px;
+    margin-left: 75px;
   }
   #one{
-    flex-basis: 75%;
-    margin-right: 50px;
+    flex-basis: 50%;
     align-self: center;
   }
   #two{
